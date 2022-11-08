@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@shopify/shopify-api": "^5.2.0",
+    "dotenv": "^16.0.3",
+    "fs": "^0.0.1-security",
+    "shopify-api-node": "^3.11.3"
+  },
+  "name": "update-sklad-metafields",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

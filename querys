@@ -1,0 +1,25 @@
+// update metafield
+
+
+mutation productVariantUpdate {
+
+  zero: productVariantUpdate(input: {id: "gid://shopify/ProductVariant/43419458928856", metafields: [
+      {
+          namespace: "custom",
+          key: "sklad",
+          value: "lol"
+      }]}) {
+      ...update
+  }
+
+
+}
+fragment update on ProductVariantUpdatePayload {
+productVariant {
+      id
+      metafield(namespace: "custom", key: "sklad") { value }
+}
+}
+
+
+// get variants
